@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Log</servlet-name>
+        <servlet-class>Log</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>hospital</servlet-name>
+        <servlet-class>hospital</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>consultation</servlet-name>
+        <servlet-class>consultation</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>medicine</servlet-name>
+        <servlet-class>medicine</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>diagnosis</servlet-name>
+        <servlet-class>diagnosis</servlet-class>
+    </servlet>
+	
+    <servlet-mapping>
+        <servlet-name>Log</servlet-name>
+        <url-pattern>/Log</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>hospital</servlet-name>
+        <url-pattern>/hospital</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>consultation</servlet-name>
+        <url-pattern>/consultation</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>medicine</servlet-name>
+        <url-pattern>/medicine</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>diagnosis</servlet-name>
+        <url-pattern>/diagnosis</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
